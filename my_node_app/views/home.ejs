@@ -9,9 +9,9 @@
     <h1 id = "page-heading"><%= title %></h1>
     <% if(currUserEmail != '') {%>
       <div>
-        <a href="/sign-out">
+        <form action="/sign-out" method="POST">
           <i><button>Sign Out</button></i>
-        </a>
+        </form>
       </div>
       <div class = "list">
         <% for(let i of todo_list) { %>

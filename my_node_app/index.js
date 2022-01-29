@@ -67,7 +67,7 @@ app.post('/create', sign_up_func);
 
 app.post('/create-session', sign_in_func_1, sign_in_func_2);
 
-app.get('/sign-out', sign_out_func);
+app.post('/sign-out', sign_out_func);
 
 app.get('/practice', function(req, res){
   return res.render('practice', {title : "lets play.."});
